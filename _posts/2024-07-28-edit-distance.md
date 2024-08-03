@@ -14,18 +14,12 @@ The number of operations required to convert a string to another one is called t
     Insert characters from the target string to the source string. 
 
 
-<pre class="mermaid">
+
 graph LR
   a --- b & c --- d
-</pre>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
 
     
-    e.g. 
-    
-    ISHAN (source)     --->  NISHANT (target)
 
-    ISHAN --(insert N)--> NISHAN --(insert T)--> NISHANT 
 2. Deletion
 3. Replacement
 
