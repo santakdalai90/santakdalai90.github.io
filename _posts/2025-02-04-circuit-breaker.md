@@ -23,7 +23,7 @@ This pattern is particularly useful in distributed systems, where services commu
 
 ## **How Does the Circuit Breaker Pattern Work?**
 
-![alt text](image.png)
+![circuit breaker flow](/assets/img/image.png)
 
 The Circuit Breaker pattern typically operates in three states:
 
