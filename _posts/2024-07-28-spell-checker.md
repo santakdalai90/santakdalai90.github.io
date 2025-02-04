@@ -5,7 +5,7 @@ categories: [DSA, Dynamic Programming]
 tags: [dynamicProgramming, dsa, coding]
 ---
 
-# Problem Statement
+# Problem Statement [WIP]
 Given a word, check if it is spelled correctly. If not then suggest corrections.
 
 # Logic
