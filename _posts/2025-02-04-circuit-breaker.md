@@ -1,11 +1,9 @@
 ---
-title: Circuit breaker in Golanf
+title: Circuit breaker in Microservices [WIP]
 date: 2025-02-04 00:07:00 +0530
 categories: [Design, Software engineering]
 tags: [softwareEngineering, design, coding]
 ---
-
-# Circuit Breakers in Microservices: A Key Pattern for Resilient Systems [WIP]
 
 In the world of **microservices architecture**, where applications are built as a collection of loosely coupled, independently deployable services, failures are inevitable. Services often depend on other services, and if one service fails or becomes unresponsive, it can lead to cascading failures across the system. To address this challenge, the **Circuit Breaker pattern** is commonly employed to enhance the resilience and fault tolerance of microservices.
 
