@@ -232,4 +232,5 @@ plugins:
 
 # personal settings
 
-markdown: GFM
+kramdown:
+  input: GFM
