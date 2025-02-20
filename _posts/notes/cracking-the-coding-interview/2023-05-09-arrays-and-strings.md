@@ -6,22 +6,26 @@ tags: [dsa, coding, arrays]
 ---
 
 # Hashing by Chaining
+
 * Array of size N
 * Each element of the array is a linked list
 * element with key k gets appended to the linked list at index `hash(k) %N`
 
 # Hashtable using binary search tree
+
 * O(log n) lookup time
 * less space consumption, no need to allocate large memory in the beginning
 
 ❓ check whether it's an array of binary search trees.
 
 # ArrayList (Dynamin Arrays) / Slice
+
 * Dynamically resizes
 * O(1) access
 * Doubles everytime it's at the capacity.
 
 # StringBuilder
+
 * Strings are immutable in Golang. So most operations on strings would create a copy and it's inefficient.
 * `strings.Builder` can help avoid this problem.
 
@@ -43,6 +47,7 @@ func main() {
 	fmt.Println(sb.String())
 }
 ```
+
 https://goplay.space/#NUe1vJ4W5Rx
 
 * `strings.Builder` uses a buffer to store the data and converts to string only when necessary.
@@ -53,6 +58,7 @@ https://goplay.space/#NUe1vJ4W5Rx
     ## Solution: 
     
     ### Approach 1: Using Hash
+
     Create an array of size 26 (assuming the string has only small letters). Iterate over each character of the string and get the ascii value and subtract 61 from it. You get the index and then increment the value at that index.
 
     If the value at a given index reaches 2 then there is a duplicte and we return false from there.
@@ -71,6 +77,7 @@ https://goplay.space/#NUe1vJ4W5Rx
         return true
     }
     ```
+
     https://goplay.space/#ArKXNJUbvma
 
     |  |  |
@@ -79,6 +86,7 @@ https://goplay.space/#NUe1vJ4W5Rx
     | Time complexity | O(n) | 
 
     ### Approach 2: Using Bit Manipulation
+
     This approach uses just an integer - int32 to keep track of, if the letter has appeared before.
     
     We can set a bit if we've seen a character.
@@ -103,6 +111,7 @@ https://goplay.space/#NUe1vJ4W5Rx
         return true
     }
     ```
+
     https://goplay.space/#4olyfYEVtyC
 
     |  |  |
@@ -115,6 +124,7 @@ https://goplay.space/#NUe1vJ4W5Rx
 1. Implement an function to reverse a string, which takes a pointer and reverses the string.
 
     ## Solution: 
+
     Since Golang strings are immutable, the best option is to use an array of runes and to do this.
 
     ```go
@@ -133,6 +143,7 @@ https://goplay.space/#NUe1vJ4W5Rx
     ## Solution: 
     
     ### Approach 1: Using frequency map
+
     Take first string and make a frequency map for each letter.
 
     Take second string and for each string check if it exists in the map. If it doeas, then reduce the frequency.
@@ -158,14 +169,16 @@ https://goplay.space/#NUe1vJ4W5Rx
         return true
     }
     ```
-    https://goplay.space/#opPRQcgBpj3
     
+    https://goplay.space/#opPRQcgBpj3
+
     |  |  |
     |---|---|
     | Space Complexity | O(n) |
     | Time complexity | O(n) |
 
     ### Approach 2: By sorting the strings
+
     We can sort the strings and check for equality.
     ```go
     func sortCharacters(word string) string {
@@ -185,6 +198,7 @@ https://goplay.space/#NUe1vJ4W5Rx
         return sortCharacters(a) == sortCharacters(b)
     }
     ```
+
     https://goplay.space/#HYI985BPICE
 
     |  |  |  |
