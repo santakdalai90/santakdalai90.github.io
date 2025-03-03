@@ -230,4 +230,6 @@ plugins:
   - jekyll-spaceship
 
 # personal settings
-markdown: GFM
+markdown: kramdown
+kramdown:
+  input: GFM
