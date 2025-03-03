@@ -229,5 +229,5 @@ jekyll-archives:
 plugins:
   - jekyll-spaceship
 
-
 # personal settings
+markdown: GFM
