@@ -2,4 +2,6 @@
 
 ## [About Me](about.md) 
 
-[sample note](note.md)
+## [Blogs](blogs/blogs.md)
+
+## [Notes](notes/notes.md)
